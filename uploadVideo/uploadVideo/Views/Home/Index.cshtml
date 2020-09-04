@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <div>
+            <input type="button" value="save document" onclick="@("window.location.href='" + @Url.Action("Upload", "VideoOperation") + "'");" />
+        </div>
+        <div>
+            <input type="button" value="delete document" onclick="@("window.location.href='" + @Url.Action("Delete", "VideoOperation") + "'");" />
+        </div>
+    </div>
+</div>
